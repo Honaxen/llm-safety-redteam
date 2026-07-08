@@ -1,0 +1,15 @@
+# Root requirements for llm-safety-redteam.
+# Every script here talks to a local Ollama instance directly via
+# urllib (standard library) -- no LLM SDK dependency needed for that part.
+
+# --- Report generation ---
+# (report_generator.py and safety_filter.py use only the standard library --
+#  listed here for completeness, not because they need installing)
+
+# --- API integration example (defense/middleware_example.py) ---
+fastapi
+pydantic
+
+# --- Testing ---
+pytest
+httpx
